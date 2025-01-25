@@ -27,11 +27,8 @@ for (let i = 0; i < imgElements.length; i++) {
 
 
       // console.log(clickedImg)
-    // let  blankRow = parseInt(blankElement.getAttribute("data-row"));
-    // let  blankCol = parseInt(blankElement.getAttribute("data-col"));
-    // let  blankSrc = blankElement.getAttribute("src");
-    // let  blankClass = blankElement.getAttribute("class");
-    // console.log(blankElement)
+
+       // console.log(blankElement)
       // Access the data attributes of the clicked image
       let  dataRow = clickedImg.getAttribute("data-row");
       let  dataCol = clickedImg.getAttribute("data-col");
@@ -41,7 +38,7 @@ for (let i = 0; i < imgElements.length; i++) {
    // now we swap the values of clicked element and blank element 
 
    function swapElements(){
-    clickedImg.setAttribute("src" ,blankSrc)
+          clickedImg.setAttribute("src" ,blankSrc)
           blankElement.setAttribute("src" , dataSrc)
   
             let temp;     
@@ -55,9 +52,9 @@ for (let i = 0; i < imgElements.length; i++) {
          
             blankElement = clickedImg;
   }
+   //swapping conditions:
 
-
-    // row 3
+    // for row 3 swap
 
    if(dataRow == 3 && dataCol == 2  && blankRow == 3 && blankCol == 3 ) {
     swapElements(clickedImg, blankElement);
@@ -71,7 +68,7 @@ for (let i = 0; i < imgElements.length; i++) {
    else if(dataRow == 3 && dataCol == 2  && blankRow == 3 && blankCol == 1 ) {
     swapElements(clickedImg, blankElement);
    }
-    // row 2 swap
+    // for  row 2 swap
   else if(dataRow == 2 && dataCol == 2  && blankRow == 3 && blankCol == 2 ) {
       swapElements(clickedImg, blankElement);
    }
@@ -103,7 +100,7 @@ else if(dataRow == 2 && dataCol == 3  && blankRow == 3 && blankCol == 3) {
   swapElements(clickedImg, blankElement);
 }
 
-// swap row -1
+// swap row 1
 
 else if(dataRow == 1 && dataCol == 2  && blankRow == 2 && blankCol == 2 ) {
   swapElements(clickedImg, blankElement);
@@ -150,6 +147,9 @@ else if(dataRow == 1 && dataCol == 3  && blankRow == 2 && blankCol == 3) {
    
            
 });
+
+
+
 }
 
   
