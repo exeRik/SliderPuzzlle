@@ -1,5 +1,7 @@
 const imgElements = document.getElementsByTagName("img");
 let  blankElement = document.getElementsByClassName("blank-element")[0];
+const win = document.getElementsByClassName("win")[0];
+
 
 // clickedElement.setAttribute("data-row", blankRow);
 // clickedElement.setAttribute("data-col", blankCol);
@@ -12,6 +14,9 @@ let  blankRow = blankElement.getAttribute("data-row");
 let  blankCol = blankElement.getAttribute("data-col");
 let  blankSrc = blankElement.getAttribute("src");
 let  blankClass = blankElement.getAttribute("class");
+
+
+// console.log((imgElements[1].src == 'http://127.0.0.1:5500/images/11.jpg')? "true" : "false");
 
 
 
@@ -141,7 +146,13 @@ else if(dataRow == 1 && dataCol == 3  && blankRow == 2 && blankCol == 3) {
 }
 
 
-
+// now we check for game over condition:
+if(imgElements[1].src == 'http://127.0.0.1:5500/images/00.jpg' && imgElements[2].src == 'http://127.0.0.1:5500/images/10.jpg' && imgElements[3].src == 'http://127.0.0.1:5500/images/20.jpg' && imgElements[4].src == 'http://127.0.0.1:5500/images/01.jpg'  && imgElements[5].src == 'http://127.0.0.1:5500/images/11.jpg'  && imgElements[6].src == 'http://127.0.0.1:5500/images/21.jpg'  && imgElements[7].src == 'http://127.0.0.1:5500/images/02.jpg'  && imgElements[8].src == 'http://127.0.0.1:5500/images/12.jpg'   && imgElements[9].src == 'http://127.0.0.1:5500/images/blank.avif'){
+   win.className = "win"
+}
+// else{
+//   console.log("noobb")
+// }
 
 
    
@@ -152,4 +163,8 @@ else if(dataRow == 1 && dataCol == 3  && blankRow == 2 && blankCol == 3) {
 
 }
 
+
+
+//to test the code: cick on: move the blocks surrounding blank block in clockwise or anticlockwise direction , until you win :))
   
+
