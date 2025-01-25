@@ -147,7 +147,7 @@ else if(dataRow == 1 && dataCol == 3  && blankRow == 2 && blankCol == 3) {
 
 
 // now we check for game over condition:
-if(imgElements[1].src == 'http://127.0.0.1:5500/images/00.jpg' && imgElements[2].src == 'http://127.0.0.1:5500/images/10.jpg' && imgElements[3].src == 'http://127.0.0.1:5500/images/20.jpg' && imgElements[4].src == 'http://127.0.0.1:5500/images/01.jpg'  && imgElements[5].src == 'http://127.0.0.1:5500/images/11.jpg'  && imgElements[6].src == 'http://127.0.0.1:5500/images/21.jpg'  && imgElements[7].src == 'http://127.0.0.1:5500/images/02.jpg'  && imgElements[8].src == 'http://127.0.0.1:5500/images/12.jpg'   && imgElements[9].src == 'http://127.0.0.1:5500/images/blank.avif'){
+if(imgElements[1].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/00.jpg' && imgElements[2].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/10.jpg' && imgElements[3].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/20.jpg' && imgElements[4].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/01.jpg'  && imgElements[5].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/11.jpg'  && imgElements[6].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/21.jpg'  && imgElements[7].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/02.jpg'  && imgElements[8].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/12.jpg'   && imgElements[9].src == 'http://127.0.0.1:5500/SliderPuzzlle/images/blank.avif'){
    win.className = "win"
 }
 // else{
